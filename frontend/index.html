@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mrrn.jp</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <h1>Menu</h1>
+                    <ul>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="theme-switch">
+            <input
+                type="checkbox"
+                id="themeSwitch"
+                class="theme-switch__input"
+            >
+            <label
+                for="themeSwitch"
+                class="theme-switch__label"
+            >
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>森藤 滉太</h1>
+            <p>Webエンジニアを目指す専門学生</p>
+        </section>
+
+        <section id="profile">
+            <h2>プロフィール</h2>
+        </section>
+
+        <section id="skills">
+            <h2>スキル</h2>
+        </section>
+
+        <section id="works">
+            <h2>制作物</h2>
+        </section>
+
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#profile">プロフィール</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#works">制作物</a></li>
+            </ul>
+        </nav>
+
+        <p><a href="#">利用規約</a></p>
+        <p><a href="#">プライバシーポリシー</a></p>
+        <p>&copy; 2026 Kota Morito</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -81,12 +81,13 @@ nav a{
     content: "☀";
 
     position: absolute;
-    left: -21px;
-    top: 50%;
+    left: -24px;
+    top: 47%;
 
     transform: translateY(-50%);
 
     color: #f59e0b;
+    font-size: 15px;
 }
 
 .theme-switch__label::after{
@@ -94,11 +95,12 @@ nav a{
 
     position: absolute;
     right: -17px;
-    top: 50%;
+    top: 47%;
 
     transform: translateY(-50%);
 
     color: #94a3b8;
+    font-size: 16px;
 }
 
 .theme-switch__label span{

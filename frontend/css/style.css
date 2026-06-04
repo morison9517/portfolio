@@ -149,6 +149,19 @@ nav a{
     transition: all 0.3s ease;
 }
 
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
 .menu-links {
     position: fixed;
     top: 0;
@@ -222,18 +235,6 @@ nav a{
     transition:
         opacity 0.5s ease,
         visibility 0s linear 0s;
-}
-
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(6px, 6px);
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .menu-links.open h1 {

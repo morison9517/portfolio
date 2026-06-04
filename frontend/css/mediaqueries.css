@@ -23,6 +23,9 @@
     section {
         margin: 0 5%;
     }
+    #welcome {
+        margin: 0;
+    }
     .section__pic-container {
         width: 275px;
         height: 275px;
@@ -30,5 +33,26 @@
     }
     .about-containers {
         margin-top: 0;
+    }
+}
+
+@keyframes scroll-line{
+    0%{
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    50%{
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    51%{
+        transform-origin: bottom;
+    }
+
+    100%{
+        transform: scaleY(0);
+        transform-origin: bottom;
     }
 }

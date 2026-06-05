@@ -8,9 +8,34 @@ themeSwitch.addEventListener("change", () => {
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
-    const body = document.body;
 
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-    body.classList.toggle("no-scroll");
 }
+
+function applyTheme() {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+        themeSwitch.checked = true;
+    } else {
+        document.body.classList.remove("dark");
+        themeSwitch.checked = false;
+    }
+}
+
+applyTheme();
+
+window.addEventListener("pageshow", applyTheme);
+
+themeSwitch.addEventListener("change", () => {
+    const isDark = themeSwitch.checked;
+
+    document.body.classList.toggle("dark", isDark);
+
+    localStorage.setItem(
+        "theme",
+        isDark ? "dark" : "light"
+    );
+});

@@ -2,7 +2,7 @@
     --bg-color: #ffffff;
     --text-color: #111827;
     --card-color: #f3f4f6;
-    --accent-color: #01a13c;
+    --accent-color: #00752b;
 
     --header-bg: rgba(255,255,255,.75);
 }
@@ -39,9 +39,7 @@ header{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
-    transition:
-        background-color .3s,
-        color .3s;
+    transition:none;
 
     position: fixed;
     top: 0;
@@ -186,9 +184,9 @@ nav a{
 .menu-links {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
 
-    width: 100%;
+    width: 320px;
     height: 100vh;
 
     background-color: var(--accent-color);
@@ -204,8 +202,10 @@ nav a{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+
+    padding-top: 50px;
 }
 
 .menu-links h1,
@@ -226,8 +226,9 @@ nav a{
 
 .menu-links h1 {
     color: white;
-    font-size: 50px;
-    margin-bottom: 50px;
+    font-size: 3.5rem;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .menu-links ul {
@@ -239,7 +240,7 @@ nav a{
 }
 
 .menu-links a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
 }
@@ -278,10 +279,6 @@ nav a{
     transition-delay: 0.4s;
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
-
 #welcome {
     min-height: 100vh;
 
@@ -289,6 +286,8 @@ body.no-scroll {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    background-attachment: fixed;
 
     display: flex;
     justify-content: center;
@@ -358,4 +357,71 @@ body.no-scroll {
     background-color: white;
 
     animation: scroll-line 1.4s ease-in-out infinite;
+}
+
+#about {
+    background-color: var(--bg-color);
+    padding: 80px 10%;
+}
+
+#about h2 {
+    margin-bottom: 3.5rem;
+    font-size: 3rem;
+
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.about-text h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-details {
+    list-style: none;
+    padding: 0;
+}
+
+.about-details li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0.6rem;
+}
+
+.about-details a,
+.about-details a:visited{
+    color: #2997ff;
+    text-decoration: none;
 }

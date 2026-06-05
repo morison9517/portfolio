@@ -3,8 +3,14 @@
     --text-color: #111827;
     --card-color: #f3f4f6;
     --accent-color: #00752b;
+    --hover-color: #353535;
 
     --header-bg: rgba(255,255,255,.75);
+}
+
+a,
+a:visited{
+    text-decoration: none;
 }
 
 body.dark{
@@ -423,5 +429,60 @@ nav a{
 .about-details a,
 .about-details a:visited{
     color: #2997ff;
-    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.about-details a:hover{
+    color: var(--hover-color);
+}
+
+#products {
+    padding: 100px 0;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.product-card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+
+    transition: transform 0.2s ease;
+}
+
+.product-card a:hover img {
+    transform: scale(1.03);
+}
+
+.product-card a:hover h3 {
+    color: var(--hover-color);
+}
+
+.product-card a h3,
+.product-card a h3:visited{
+    color: white;
+
+    transition: color 0.2s ease;
+}
+
+.products-more {
+    margin-top: 3rem;
+    text-align: right;
+}
+
+.products-more a {
+    font-size: 1rem;
+    font-weight: 600;
 }

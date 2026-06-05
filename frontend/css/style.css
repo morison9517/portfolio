@@ -195,7 +195,7 @@ nav a{
     width: 320px;
     height: 100vh;
 
-    background-color: var(--accent-color);
+    background-color: #737272;
 
     opacity: 0;
     visibility: hidden;
@@ -312,7 +312,7 @@ nav a{
     position: absolute;
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .hero {
@@ -451,7 +451,6 @@ nav a{
 }
 
 .product-card {
-    border-radius: 20px;
     overflow: hidden;
 }
 

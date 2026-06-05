@@ -285,6 +285,10 @@ nav a{
     transition-delay: 0.4s;
 }
 
+.menu-links.open li:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
 #welcome {
     min-height: 100vh;
 
